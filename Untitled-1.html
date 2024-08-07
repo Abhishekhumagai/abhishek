@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(/images/nature.jpg);
+        background-position: 20px 30ps;
+        background-size: cover;
+        margin: 100px;
+      }
+      .sum {
+        padding-left: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sum">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" required /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" required /><br />
+      <label for="email">Enter your email:</label><br />
+      <input type="email" id="email" required /><br />
+      <label for="psw">Password</label><br />
+
+      <input
+        type="password"
+        id="psw"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must have upper case and lower case & have at least 8 character letter"
+        required
+      /><br /><br />
+      <button onClick="validateForm">Submit</button>
+
+      <button type="button">Forgot Password</button>
+    </div>
+
+    <script>
+      function validateForm() {
+        let name = document.getElementById("fname").value;
+        if (name == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+
+        let lname = document.getElementById("lname").value;
+        if (lname == "") {
+          alert("lname must filled");
+          return false;
+        }
+        let emailvalue = document.getElementById("email").value;
+        emailvalidation = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
+        if (emailvalidation.test(emailvalue)) {
+          alert("please enter the  valid email");
+          return emailvalidation.test(emailvalue);
+        }
+
+        let password = document.getElementById("password").value;
+        if (password.length < 8) {
+          alert("password must be 8 letter");
+          return false;
+        }
+        let valid = {
+          Name: name,
+          LastName: lname,
+          Email: emailvalue,
+          Password: "**********",
+        };
+        console.log(valid);
+        return;
+      }
+    </script>
+  </body>
+</html>

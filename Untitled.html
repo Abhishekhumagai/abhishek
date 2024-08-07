@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Name:<span id="name">  Raj </span><br><br>
+    Roll:<span id=roll>1</span><br><br>
+    Address:<span id="address">Banepa</span><br><br>
+    <button type="button" id="read " name="name" onclick="readFunction()">Read</button>
+    <button type="button" id="write"  name=" roll" onclick="writefunction()">Write</button>
+    <button type="button" id="write"  name=" address" onclick="writefunction1()">Write</button>
+<script>
+    
+        let Name=document.getElementById("name");
+      
+        let Roll=document.getElementById("roll");
+       
+        let Address=document.getElementById("address");
+
+        function readFunction(){
+            let obj={ username: Name.innerHTML,
+             userrollno:Roll.innerHTML,
+            useraddress : Address.innerHTML}
+            console.log(obj);
+        }
+        function writefunction(){
+            let write=document.getElementById("name");
+            write.innerHTML="Abhi"
+            let write1=document.getElementById("roll");
+            write1.innerHTML=2
+            let write2=document.getElementById("address");
+            write2.innerHTML="nala"
+        }
+        function writefunction1(){
+            let write=document.getElementById("name");
+            write.innerHTML="ram"
+            let write1=document.getElementById("roll");
+            write1.innerHTML=4
+            let write2=document.getElementById("address");
+            write2.innerHTML="ktm"
+        }
+        
+
+        
+            
+
+        
+
+
+        
+
+    
+</script>
+
+</body>
+
+</html>

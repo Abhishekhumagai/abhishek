@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+  <h2>JavaScript Validation</h2>
+
+    <div style=" font: 1em sans-serif;">
+      <span> Name: <br><input type="text" id="fname"><br></span>
+      <span> Lname:<br><input type="text" id="lname"><br></span>
+      <span> Email:<br><input type="email" id="email"><br></span>
+      <span> password:<br><input type="password" id="password"><br></span><br>
+      <button onClick="validateForm()" >SUBMIT</button>
+    </div>
+
+
+  <script>
+    function validateForm() {
+
+      let name = document.getElementById("fname").value;
+      if (name == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      let lname = document.getElementById("lname").value;
+      if (lname == "") {
+        alert("lname must filled");
+        return false;
+      }
+      let emailvalue = document.getElementById("email").value;
+      emailvalidation = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/;
+      if (emailvalidation.test(emailvalue)) {
+        alert("please enter the  valid email");
+        return emailvalidation.test(emailvalue);
+      }
+
+      let password = document.getElementById("password").value;
+      if (password.length < 8) {
+        alert("password must be 8 letter");
+        return false;
+      }
+      let valid={
+        Name:name,
+        LastName:lname,
+        Email:emailvalue,
+        Password:"**********"
+      
+      }
+      console.log(valid);
+      return 
+    }
+
+
+  </script>
+</body>
+
+</html>

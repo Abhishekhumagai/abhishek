@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="test" onmousemove="Myfunction()">Hello world</div>
+    <div id="tes" ondblclick="Myfunction1()">Hello world</div>
+    <script>
+      function Myfunction() {
+        let test = document.getElementById("test");
+        test.innerHTML = "Abhi";
+      }
+      function Myfunction1() {
+        let tes = document.getElementById("tes");
+        tes.innerHTML = "Abhi";
+      }
+
+      document.getElementById("test");
+      console.log("hello world");
+      let txt = document.getElementById("test");
+      txt.innerHTML = "hi";
+    </script>
+  </body>
+</html>

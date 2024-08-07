@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    width: 100%;
+    background-size: cover;
+
+}
+
+header {
+    background-color: #B1AFFF;
+    width: 100%;
+
+}
+
+header ul {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: rgb(160, 53, 53);
+
+
+
+
+}
+
+header li {
+    list-style: none;
+}
+
+
+header ul li a {
+    justify-content: space-between;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+header ul li a:hover {
+    color: orange;
+}
+
+main {
+    height: 1009%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+    width: 95%;
+}
+
+.bar {
+    margin: 0px;
+    padding: 250px;
+    color: rgb(71, 186, 156);
+
+}
+
+footer ul {
+
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+
+}
+
+footer li {
+    list-style: none;
+}
+
+footer ul li {
+    justify-content: center;
+    border: 3px solid black;
+    text-decoration: none
+}
+
+footer ul li a:hover {
+    color: brown;
+}
+
+.hh {
+    text-align: left;
+}
+
+.ll {
+    width: 20px;
+    text-align: left;
+}
+
+.aim {
+    background-image: url(../images/cycle.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: red;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background-color: rgb(4, 4, 25);
+    color: white;
+}
