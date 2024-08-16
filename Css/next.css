@@ -11,7 +11,7 @@
 }
 
 header {
-    background-color: #B1AFFF;
+    background-color: #f0956b;
     width: 100%;
 
 }
@@ -41,11 +41,11 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: orange;
+   color: #15ac81;
 }
 
 main {
-    height: 1009%;
+    height: 100%;
 }
 
 nav {
@@ -83,7 +83,7 @@ footer ul li {
 }
 
 footer ul li a:hover {
-    color: brown;
+    color: rgb(187, 28, 28);
 }
 
 .hh {

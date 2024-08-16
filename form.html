@@ -1,28 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=n, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/new.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="new.css">
-</head>
+  <body>
+    <div class="all">
+      <div class="image">
+        <img
+          src="https://picsum.photos/seed/picsum/200/300"
+          alt="image"
+          height="400px"
+          style="width: 300px; border-radius: 2s0px"
+        />
+      </div>
+      <div class="login">
+        <h2>Sign Up</h2>
+        <br />
+        <span>
+          First Name: <br /><input
+            type="text"
+            id="fname"
+            placeholder="Enter your name" /><br /></span
+        ><br />
+        <span>
+          Last Name:<br /><input
+            type="text"
+            placeholder="Enter your last Name"
+            id="lname" /><br /></span
+        ><br />
+        <span>
+          Email:<br /><input
+            type="email"
+            placeholder="Enter your Email"
+            id="email" /><br /></span
+        ><br />
+        <span>
+          Password:<br /><input
+            type="password"
+            placeholder="Enter your Password"
+            id="password" /><br /></span
+        ><br />
+        <span>
+          Conform password:<br /><input
+            type="password"
+            id="Conform"
+            placeholder="Enter your Confirm password" /><br /></span
+        ><br />
 
-<body >
-  <form >
-    <div  class="url" >
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Enter your email:</label><br> 
-    <input type="email" id="email" name="email"><br>
-    <label for="psw">Password</label><br>
-    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-      title="Must have upper case and lower case & have at least 8 character letter" required><br><br>
-      <button style="text-decoration: none;"><a href="index.html">Susbmit</a></button>
-</div>
-  </form>
-</body>
+        <div class="btn">
+          <button onClick="validateForm()">submit</button>
+          <button style="margin-right: 8px">
+            <a href="React.html">Sign in</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function validateForm() {
+        let name = document.getElementById("fname").value;
+        if (name == "") {
+          alert("Name must be filled out");
+          return false;
+        }
 
+        let lname = document.getElementById("lname").value;
+        if (lname == "") {
+          alert("lname must filled");
+          return false;
+        }
+        let email = document.getElementById("email").value;
+        let emailvalidation = /^[a-zA-Z0-9_.+-]+@gmail\.com$/;
+        if (!emailvalidation.test(email)) {
+          alert("please enter the  valid email");
+          return false;
+        }
+
+        let password = document.getElementById("password").value;
+        if (password.length < 8) {
+          alert("password must be 8 letter");
+          return false;
+        }
+        let Conformpassword = document.getElementById("Conform").value;
+        if (Conformpassword !== password) {
+          alert("Confirm password is not Match");
+        }
+        let valid = {
+          Name: name,
+          LastName: lname,
+          Email: email,
+          Password: passwords,
+          confirm: Conformpassword,
+        };
+        console.log(valid);
+        return;
+      }
+    </script>
+  </body>
 </html>

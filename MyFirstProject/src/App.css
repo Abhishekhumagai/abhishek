@@ -1,0 +1,15 @@
+.connection {
+  display: flex;
+}
+
+.image {
+
+  text-align: center;
+  margin: 90px;
+}
+
+.setup {
+  text-align: center;
+  font-size: 100px;
+  font-family: inherit;
+}

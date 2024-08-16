@@ -1,0 +1,139 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+    color: white;
+    background: #000;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    justify-content: space-around;
+    font-size: large;
+
+
+}
+
+.navbar-content .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.navbar-content ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-content ul li span:hover {
+    color: rgb(12, 88, 63);
+
+}
+
+.nav-options {
+    text-decoration: none;
+}
+
+.butt {
+    font-size: medium;
+
+    height: 30px;
+    padding: 5px 10px;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn :hover {
+    background-color: white;
+    color: green;
+}
+
+.edit {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.best-content {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    text-indent: 0%;
+    text-align: center;
+}
+
+.setup {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+}
+
+.website {
+    width: 69%;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    font-weight: bold;
+
+}
+
+.useFlex {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 35px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.about-cycle {
+    align-items: center;
+    width: 500px;
+
+
+}
+
+.bitss {
+    font-size: medium;
+
+    height: 30px;
+    padding: 5px 10px;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.bitss:hover {
+    background-color: white;
+    color: green;
+}
+
+
+
+.sub {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    text-indent: 0%;
+    text-align: center;
+
+
+}
+
+.sub:hover {
+    background-color: white;
+    color: green;
+}
+
+.subs {
+    text-align: center;
+}
